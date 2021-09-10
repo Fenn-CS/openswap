@@ -30,6 +30,21 @@ This project is an open-source project, and it is free for anybody who wishes to
 Crypto swap is a peer-to-peer cryptocurrency marketplace where buyers and sellers are connected for business, This platform provides a variety of rates for crypto sellers and well-secured payment methods, 
 Crypto-swae project we have chosen Vb.Net language for its more interactive support.
 
+### 1.5 REFERENCES
+<table>
+<tr>
+<th>Mr. Jam Stanley </th>
+<td>The Co-founder</td>
+</tr>
+<tr>
+<th>Mr. Fenn </th>
+<td>The conceptualist</td>
+</tr>
+<tr>
+<th>paxful.com</th>
+<td>A similar conception</td>
+</tr>
+</table>
 
 ## OVERALL DESCRIPTION
 ### 2.1 PRODUCT PERSPECTIVE
@@ -106,3 +121,72 @@ A seller will have access to sellers functions, while a buyer will have access t
         <tr><td>Set a transaction time frame</td></tr>
 </tr>
 </table>
+
+### 2.4 OPERATING ENVIRONMENT
+
+**The operating environment for this crypto-swap system is as listed below**
+
+- distributed database
+- client/server system
+- Operating system:  Cross-platform.
+- database: MySQL
+- platform: NodeJS
+
+### 2.5 DESIGN and IMPLEMENTATION CONSTRAINTS
+
+
+
+### 2.6 ASSUMPTION DEPENDENCIES
+
+A dispute can be awarded to the client base on the competent of evidence provided by the client (as requested by the moderator)
+
+A dispute may take up to 3 working days if enough evidence is not provided by the client 
+
+A trade may delay due to the failure of a third party ( such as mtn API not responding, network problem, etc)
+
+Any act of spam or scam may lead to the deletion of a user 
+
+
+## 3. SYSTEM FEATURES
+### 3.1 DESCRIPTION and PRIORITY
+
+The crypto-swap provides a safe secured and decentralized exchange platform where anybody can buy and sell cryptocurrencies in less than no time.
+This project has a high priority because it helps sellers compare the buying rate of various buyers and choose the best.  
+
+### 3.2 STIMULUS/RESPONSE SEQUENCES
+
+
+#### FUNCTIONAL REQUIREMENTS
+
+**Other system features include:**
+
+## 4. EXTERNAL INTERFACE REQUIREMENTS
+### 4.1 USER INTERFACES
+
+- Front-end software: ViewJs.
+- Back-end software: MySQL, Nodejs, Expressjs.
+
+### 4.2 HARDWARE INTERFACES
+
+- Cross platform:- Windows, Linux, MacOS etc.
+- A browser which supports HTML & Javascript.
+
+<table>
+<tr>
+<th>Software used</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Operating system</td>
+<td>Cross platform so that any user can conveniently use the system he is comfortable with.</td>
+</tr>
+<tr>
+<td>Database</td>
+<td>To save the transaction users records we have chosen MySQL database.</td>
+</tr>
+</table>
+
+### 4.4 COMMUNICATION INTERFACES
+
+This project supports all types of web browsers. 
+
