@@ -29,7 +29,7 @@ var connection = typeorm.createConnection({
     console.log("typeorm connection created")
 })
 .catch((err)=> {
-    console.log(err);
+    console.log(err)
 })
 
 var app = express();
