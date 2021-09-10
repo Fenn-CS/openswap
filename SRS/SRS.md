@@ -36,6 +36,26 @@ Crypto-swap is 100% decentralized since no one is imposing a price or rates on a
 
 ---
 
+### 1.5 AUTHORS
+
+|Contributors| Role     |
+|---------------|---------------     |
+|Mr. Fenn       |Contributor/Supervisor   |
+|paxful.com     |A similar conception| 
+|Jam Stanley    |System Analist      |
+|Leoga Mibel    |Project Manager      |
+|Uche David    |Project Manager Assistant      |
+|Gnopa Excel    |Technical Manager      |
+|Lang Jessica    |Technical Managers Assistant     |
+|Etah Innocent    |Member      |
+|Thierry Mbende   |Member      |
+|Nyamsi Danold   |Member      |
+|Ngong Sherifa   |Member      |
+|Egbe Alika   |Member      |
+|Magem Manualla   |Member      |
+|Kamdem Idriss   |Member      |
+|Nga Albert   |Member      |
+|Makany Michel   |Member      |
 ###  1.5 REFERENCES
 
 |Mr. Jam Stanley| The Co-founder     |
