@@ -26,6 +26,7 @@ router.get('/user/account', UserController.account);
 /* Trade Routes */
 router.get('/trades', TradeController.index);
 router.post('/trade', TradeController.save);
+router.get('/history', UserController.history)
 router.post('/confirmTrade', TradeController.confirmTrade);
 
 /*CryptoCurrency Routes */
