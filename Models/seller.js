@@ -3,7 +3,6 @@ const { Model, DataTypes } = require('sequelize');
 const { sequelize } = require('../config/conectDB');
 const bcrypt = require("bcrypt")
 
-module.exports = (sequelize, DataTypes) => {
   class Seller extends Model {
     /**
      * Helper method for defining associations.
@@ -13,6 +12,9 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
     }
+    validPassword(password) {
+      return bcrypt.compareSync(password, this.password);
+  }
   };
   Seller.init({
     firstName: DataTypes.STRING,
@@ -27,5 +29,5 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'Seller',
   });
-  return Seller;
-};
+
+  module.exports = Seller;
