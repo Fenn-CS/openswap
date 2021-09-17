@@ -1,10 +1,26 @@
-class Transaction {
-    constructor(id, date, description, amount){
-        this.id = id;
-        this.date = date;
-        this.description= description;
-        this.amount = amount;
-    }
-}
 
-module.exports = Transaction
+'use strict';
+const { Model, DataTypes } = require('sequelize');
+const { sequelize } = require('../config/conectDB');
+const bcrypt = require("bcrypt")
+
+class Transaction extends Model {
+
+    static associate(models) {
+        // define association here
+    }
+
+    validPassword(password) {
+        return bcrypt.compareSync(password, this.password);
+    }
+};
+
+Transaction.init({
+    user_d: DataTypes.BIGINT,
+}, {
+    sequelize,
+    modelName: 'Transaction',
+});
+
+
+module.exports = Transaction;

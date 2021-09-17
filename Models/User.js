@@ -1,14 +1,30 @@
-class User {
-    constructor(id, firstName, lastName, email, phoneNumber, password) {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.phoneNumber = phoneNumber;
-        this.password = password;
-    }
-}
 
-module.exports = {
-    User: new User()
+'use strict';
+const { Model, DataTypes } = require('sequelize');
+const { sequelize } = require('../config/conectDB');
+const bcrypt = require("bcrypt")
+
+class User extends Model {
+
+    static associate(models) {
+        // define association here
+    }
+
+    validPassword(password) {
+        return bcrypt.compareSync(password, this.password);
+    }
 };
+
+User.init({
+    firstName: DataTypes.STRING,
+    lastName: DataTypes.STRING,
+    email: DataTypes.STRING,
+    phoneNumber: DataTypes.STRING,
+    password: DataTypes.STRING,
+}, {
+    sequelize,
+    modelName: 'User',
+});
+
+
+module.exports = User;
