@@ -7,6 +7,7 @@ var apiRouter = require('./routes/api');
 require('dotenv').config({ path: '.env' });
 require('./config/conectDB')
 
+
 var app = express();
 
 app.use(logger('dev'));
