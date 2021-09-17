@@ -7,6 +7,7 @@ class User extends Model {
 
     static associate(models) {
         // define association here
+   
     }
 
     validPassword(password) {

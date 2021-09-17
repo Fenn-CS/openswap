@@ -3,10 +3,12 @@ const { Model, DataTypes } = require('sequelize');
 const { sequelize } = require('../config/conectDB');
 const bcrypt = require("bcrypt")
 
+
 class Trade extends Model {
 
     static associate(models) {
         // define association here
+      
     }
 
     validPassword(password) {
