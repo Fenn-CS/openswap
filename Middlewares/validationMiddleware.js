@@ -2,11 +2,28 @@ const { body, checkSchema, validationResult } = require('express-validator');
 
 const registerValidationRules = () => {
     return checkSchema({
+        'user.firstName': {
+            isString: {
+                errorMessage: 'You must enter a firstname'
+            },
+        },
+        'user.lastName': {
+            isString: {
+                errorMessage: 'You must enter last name'
+            },
+        },
         'user.email': {
             isEmail: {
-                bail: true,
                 errorMessage: 'you must enter a valid email'
             },
+        },
+        'user.phoneNumber': {
+            custom: {
+                options: (value) => {
+                    return /(\+237|237)?\s?(6|2)(2|3|[5-9])[0-9]{7}/.test(value);
+                },
+            
+            }
         },
         'user.password': {
             isLength: {
