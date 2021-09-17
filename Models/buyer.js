@@ -3,7 +3,7 @@ const { Model, DataTypes } = require('sequelize');
 const { sequelize } = require('../config/conectDB');
 const bcrypt = require("bcrypt")
 
-class Seller extends Model {
+class Buyer extends Model {
   /**
    * Helper method for defining associations.
    * This method is not a part of Sequelize lifecycle.
@@ -16,18 +16,18 @@ class Seller extends Model {
     return bcrypt.compareSync(password, this.password);
   }
 };
-Seller.init({
+Buyer.init({
   firstName: DataTypes.STRING,
   lastName: DataTypes.STRING,
   email: DataTypes.STRING,
   role: DataTypes.STRING,
-  wallet: DataTypes.INTEGER,
   phone: DataTypes.INTEGER,
   registrationDate: DataTypes.DATE,
-  rating: DataTypes.INTEGER
+  review: DataTypes.INTEGER,
+  wallet: DataTypes.INTEGER
 }, {
   sequelize,
-  modelName: 'Seller',
+  modelName: 'Buyer',
 });
 
-module.exports = Seller;
+module.exports = Buyer;
